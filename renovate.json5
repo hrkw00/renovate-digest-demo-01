@@ -1,0 +1,29 @@
+{
+  extends: [
+    "config:base",
+    ":enableVulnerabilityAlertsWithLabel(security)",
+    ":timezone(Asia/Tokyo)",
+    ":disableDigestUpdates"
+  ],
+  ignorePresets: [":prHourlyLimit2", ":prConcurrentLimit10"],
+  prConcurrentLimit: 20,
+  reviewers: ["makotot", "hrkw00"],
+  reviewersSampleSize: 1,
+  schedule: ["after 6:00am and before 6:00pm on Monday"],
+  major: {
+    stabilityDays: 7
+  },
+  minor: {
+    stabilityDays: 3
+  },
+  patch: {
+    stabilityDays: 2
+  },
+  packageRules: [
+    {
+      groupName: "node.js",
+      matchPackageNames: ["node", "circleci/node", "@types/node"],
+      allowedVersions: "/^[0-9]+[24680]/" /* only allow LTS versions */
+    }
+  ]
+}
