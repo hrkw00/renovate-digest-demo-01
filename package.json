@@ -1,0 +1,14 @@
+{
+  "name": "renovate-digest-demo-01",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "path-parse": "https://github.com/hrkw00/path-parse#hrkw00/2022-060901"
+  }
+}
