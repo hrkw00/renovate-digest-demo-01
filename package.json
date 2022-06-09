@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "ace-builds": "https://github.com/Progate/ace-builds#1.4.2-patched-20190524",
     "path-parse": "https://github.com/hrkw00/path-parse#hrkw00/2022-060901"
   }
 }
