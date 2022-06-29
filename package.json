@@ -11,5 +11,11 @@
   "dependencies": {
     "ace-builds": "github:Progate/ace-builds",
     "path-parse": "https://github.com/hrkw00/path-parse#hrkw00/2022-060901"
+  },
+  "engines": {
+    "node": "16.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "16.0.0"
   }
 }
