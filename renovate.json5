@@ -5,5 +5,12 @@
     ":timezone(Asia/Tokyo)",
     ":disableDigestUpdates"
   ],
-  ignorePresets: [":prHourlyLimit2", ":prConcurrentLimit10"]
+  ignorePresets: [":prHourlyLimit2", ":prConcurrentLimit10"],
+  packageRules: [
+    {
+      groupName: 'node.js',
+      matchPackageNames: ['node', '@types/node'],
+      allowedVersions: '/^[0-9]+[24680]/' /* only allow LTS versions */,
+    },
+  ],
 }
