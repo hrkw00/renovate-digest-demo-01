@@ -10,6 +10,7 @@
     {
       groupName: 'node.js',
       matchPackageNames: ['node', '@types/node'],
+      "matchDepTypes": [ "engines" ],
       allowedVersions: '/^[0-9]+[24680]/' /* only allow LTS versions */,
     },
   ],
