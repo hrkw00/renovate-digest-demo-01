@@ -16,6 +16,6 @@
     "node": "16.0.0"
   },
   "devDependencies": {
-    "@types/node": "16.0.0"
+    "@types/node": "20.17.0"
   }
 }
